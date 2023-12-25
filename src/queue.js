@@ -26,7 +26,7 @@ class Queue {
   enqueue(value) {
     const newNode = new ListNode(value);
 
-    if (this.first == null) {
+    if (this.first === null) {
       this.first = newNode;
       this.last = newNode;
     }
@@ -40,7 +40,7 @@ class Queue {
 
   dequeue() {
 
-    if (this.first == null) return null;
+    if (this.first === null) return null;
 
     const itemToDel = this.first;
 
@@ -50,7 +50,7 @@ class Queue {
 
     this.first = this.first.next;
     this.length--;
-    return itemToDel;
+    return itemToDel.value;
   }
 }
 
