@@ -54,8 +54,7 @@ class BinarySearchTree {
   }
 
   find(data) {
-
-    
+   
     let currentNode = this.rootNode
     
     while (currentNode) {
@@ -68,7 +67,7 @@ class BinarySearchTree {
         currentNode = currentNode.right
       }
     }
-    return false
+    return null;
   }
 
   remove(data) {
